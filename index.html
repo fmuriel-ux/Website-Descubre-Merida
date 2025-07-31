@@ -1,0 +1,789 @@
+<!doctype html>
+<html class="h-100" lang="es">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+      <meta name="author" content="Francisco muriel">
+      <meta name="generator" content="Eleventy v2.0.0">
+      <meta name="HandheldFriendly" content="true">
+      <title>Descubre Mérida</title>
+      <link rel="stylesheet" href="css/theme.css">
+      <link rel="stylesheet" href="css/timeline.css">
+      <style>
+              /* inter-300 - latin */
+              @font-face {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: local(''),
+                    url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                    url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+              }
+
+              @font-face {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: local(''),
+                    url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                    url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+              }
+              @font-face {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: local(''),
+                    url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                    url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+              }
+      </style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0" >
+      <div class="container-fluid">
+        <a class="navbar-brand pe-4 fs-4" href="index.html">
+          <img src="img/logo-descubremerida-light.png"  height="32" class="d-inline-block align-text-top me-2" alt="Stride Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+            <li class="nav-item">
+              <a class="nav-link" href="#historia" aria-label="Brings you to the frontpage">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recintos">Recintos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mapa">Mapa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a href="#suscribete" class="btn btn-dark btn-xs shadow me-3 rounded-0 w-bold" style="margin:  0 10px;">Suscríbete</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="w-100 overflow-hidden bg-gray-100" id="top">
+        <div class="container-fluid position-relative p-0" style="overflow:hidden;">
+          <!-- Capa oscura -->
+          <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:1;"></div>
+          <!-- Video -->
+          <video class="position-absolute top-0 start-0 object-fit-cover" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover; z-index:0;">
+            <source src="img/merida_ciudades_patrimonio.mp4" type="video/mp4">
+          </video>
+          <!-- Contenido hero -->
+          <div class="row" style="padding-left:10%; position:relative; z-index:2;">
+            <div class="col-lg-7 py-vh-6" data-aos="fade-right">
+              <h1 class="display-1 fw-bold mt-5 p-4" style="color:white !important;">Descubre Mérida: <br>Patrimonio Cultural y Arqueológico</h1>
+              <p class="lead" style="color:white !important; padding: 10px 20px;">Viaja en el tiempo entre ruinas romanas y tesoros históricos en una ciudad <br>declarada Patrimonio de la Humanidad por su conjunto arqueológico excepcional. </p>
+              <a href="#video" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" style="margin-left: 20px;">Un viaje extraordinario</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="py-vh-5 w-100 overflow-hidden" id="historia">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8 text-center" data-aos="fade-down">
+            <h2 class="display-6 py-vh-3" >Explora Mérida a través de su Historia</h2>
+          </div>
+
+          <section class="timeline py-vh-3" data-aos="fade-left">
+            <ol>
+              <li>
+                <div>
+                  <time>25 a.C.</time> Fundación de Augusta Emerita por orden del emperador Augusto para acoger a veteranos de las legiones V Alaudae y X Gemina. Se convierte en capital de la provincia romana de Lusitania.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>Siglo IV-V</time> Mérida se consolida como sede arzobispal del cristianismo en Hispania. Construcción de mosaicos, basílica y consolidación del poder visigodo bajo obispos emergentes.
+                  </div>
+                </li>
+              <li>
+                <div>
+                  <time>1882-1885</time> Mérida es tomada por el rey visigodo Eurico; pasa a ser uno de los ducados visigodos.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>713</time> Conquista musulmana por Musa ibn Nusayr. Comienza la dominación árabe; se construye la Alcazaba.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>828</time> Sublevación mozárabe en Mérida. 'Abd al-Rahmán II expulsa a la población y refunda la ciudad con una guarnición militar. 
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>868</time> La rebelión liderada por Ibn Marwan lleva a la caída de la ciudad y su desmantelamiento parcial como castigo.
+              </li>
+              <li>
+                <div>
+                  <time>1230</time> Reconquista cristiana a cargo de Alfonso IX de León. La ciudad se integra en la Orden de Santiago y pierde su anterior rango arzobispal.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>Siglo XIX</time> Mérida sufre daños durante la Guerra de la Independencia (1811). Se reconstruyen muchos monumentos históricos y se restaura la ciudad.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1882-1885</time> Construcción e inauguración del Puente de Hierro sobre el Guadiana, la primera arquitectura de hierro en la ciudad.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1901</time> Fundación del Liceo de Mérida, institución cultural clave en la regeneración artística y social.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1933 / 1953	</time> Inauguración del Festival Internacional de Teatro Clásico de Mérida con Medea; reactivado en 1953 con Fedra. Desde entonces es un referente cultural. 
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1983</time> Mérida se convierte en la capital de la Comunidad Autónoma de Extremadura.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1993</time> Declarada Patrimonio de la Humanidad por la UNESCO en reconocimiento a su conjunto arqueológico romano.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2010-2025	</time> Celebración del festival de recreación romana Emerita Lvdica; en 2022 declarado Fiesta de Interés Turístico Regional, y en 2025 alcanza su XV edición. 
+                </div>
+              </li>
+              <li>
+                <div>
+                </div>
+              </li>
+            </ol>
+
+            <div class="arrows py-vh-3">
+              <button class="arrow arrow__prev disabled" disabled>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+              </button>
+              <button class="arrow arrow__next">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div class="bg-light w-100 overflow-hidden" id="recintos">
+      <div class="container py-vh-6">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8 text-center">
+            <h2 class="display-6" data-aos="fade-in">Recintos Arqueológicos y Museos</h2>
+            <p class="lead" data-aos="fade-in">Mérida, antigua Augusta Emerita, constituye un patrimonio arqueológico único declarado Patrimonio de la Humanidad por la UNESCO en 1993 por su conjunto excepcional de monumentos romanos, visigodos y musulmanes que se integran en el núcleo urbano moderno. </p>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <div class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center">
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-down">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/teatro-romano01.jpg" alt="Teatro Romano de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Teatro Romano</h3>
+                    <p>Construido entre los años 16 y 15 a.C. bajo la supervisión del cónsul Marco Vipsanio Agripa, es considerado el símbolo arquitectónico de Mérida. A lo largo de siglos fue enterrado parcialmente y redescubierto a inicios del siglo XX. Desde 1933 acoge el Festival Internacional de Teatro Clásico, revitalizando su uso simbólico y cultural.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+                  
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/xCfxdfyHsXBQCHNTA" target="_blank">Cómo llegar </a></span><br>
+                      <small class="text-muted">Arte Romano</small>
+                    </div>
+                      <span> <video controls name="media" style="height:50px; width: 120px;"><source src="https://www.audioguia.org/static/es_3539.mp3" type="audio/mpeg" ></video></span>
+                    <img src="img/iconos/coliseo.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-left">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/anfiteatro01.jpg" alt="Anfiteatro Romano de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Anfiteatro Romano</h3>
+                    <p>Inaugurado en el 8 a.C., este edificio se proyectó junto al teatro como parte de un complejo urbano dedicado a los espectáculos públicos. Podía acoger a unos 15 000 espectadores en eventos de gladiadores y venationes. Tras siglos de abandono, fue excavado en el siglo XX y restaurado respetando su autenticidad original.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/BPDjct4sQRCkpkms7" target="_blank">Cómo llegar </a></span><br>
+                      <small class="text-muted">Arte Romano</small>
+                    </div>
+                      <span> <video controls name="media" style="height:50px; width: 120px;"><source src="https://www.audioguia.org/static/es_4580.mp3" type="audio/mpeg" ></video></span>
+                    <img src="img/iconos/coliseo.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/templo-diana01.jpg" alt="Templo de Diana de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Templo de Diana</h3>
+                    <p>Ubicado en el antiguo foro municipal, este templo romano dedicado al culto imperial es el único en buen estado de conservación en Mérida. Su ubicación central refleja la organización urbana del espacio público romano. Forma parte integral del conjunto monumental de la ciudad como Patrimonio Mundial.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/FDxRbNNTAmFcHmQD6" target="_blank">Cómo llegar </a></span><br>
+                      <small class="text-muted">Arte Romano</small>
+                    </div>
+                    <img src="img/iconos/coliseo.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-down">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/circo01.jpg" alt="Circo Romano de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Circo Romano</h3>
+                    <p>Construido probablemente en tiempos de Tiberio, el circo mide más de 400 m de largo por 115 m de ancho. Con capacidad para cerca de 30.000 espectadores, fue escenario de carreras de de bigas y cuadrigas. Actualmente incluye un centro de interpretación que facilita su comprensión<p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/2fnJQxLeB43Kd7FW8" target="_blank">Cómo llegar</a></span><br>
+                      <small class="text-muted">Arte Romano</small>
+                    </div>
+                    <span> <video controls name="media" style="height:50px; width: 120px;"><source src="https://www.audioguia.org/static/es_4581.mp3" type="audio/mpeg" ></video></span>
+                    <img src="img/iconos/coliseo.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-down">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/acueducto-milagros01.jpg" alt="Acueducto de los Milagros de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Acueducto de los Milagros</h3>
+                    <p>Construido en el siglo I d.C. para trasladar agua desde el embalse de Proserpina hasta Augusta Emerita. Conserva más de 800 m de arquería con 73 pilares de granito y ladrillo, y alcanza hasta 25 m de altura. Es el acueducto mejor conservado de Mérida.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/6Tp5S8MKEiearpPs6" target="_blank">Cómo llegar</a></span><br>
+                      <small class="text-muted">Arte Romano</small>
+                    </div>
+                    <span> <video controls name="media" style="height:50px; width: 120px;"><source src="https://www.audioguia.org/static/es_4583.mp3" type="audio/mpeg" ></video></span>
+
+                    <img src="img/iconos/coliseo.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-down">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/puente-romano02.jpg" alt="Puente Romano de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Puente Romano</h3>
+                    <p>Obra monumental de ingeniería del siglo I a.C. sobre el río Guadiana. Mide aproximadamente 792 m y cuenta con 60 arcos, algunos ocultos hasta 1990. Fue vital para el crecimiento urbano de la ciudad romana.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/er8n5v6Vbc9fTXnC6" target="_blank">Cómo llegar</a></span><br>
+                      <small class="text-muted">Arte Romano</small>
+                    </div>
+                    <img src="img/iconos/coliseo.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-down">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img//arco-trajano01.jpg" alt="Arco de Trajano de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Arco de Trajano</h3>
+                    <p>Puerta monumental del foro provincial, construida en granito. Mide casi 14 m de altura y 8,7 m de luz, originalmente recubierta en mármol. Nombrado arbitrariamente como “de Trajano” aunque sin inscripción directa del emperador.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/JvK2z2yWkmVfT7DM6" target="_blank">Cómo llegar</a></span><br>
+                      <small class="text-muted">Arte Romano</small>
+                    </div>
+                    <span> <video controls name="media" style="height:50px; width: 120px;"><source src="https://www.audioguia.org/static/es_4586.mp3" type="audio/mpeg" ></video></span>
+
+                    <img src="img/iconos/coliseo.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-down">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/casa-mitreo02.jpg" alt="Casa del Mitreo de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Casa del Mitreo</h3>
+                    <p>Residencia romana del siglo I o II d.C., organizada en torno a tres patios. Destaca el mosaico cosmológico y las pinturas murales. Declarada Bien de Interés Cultural en 1990 y vinculada al culto a Mitra.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/oP1VJvn9aveyF3xW6" target="_blank">Cómo llegar</a></span><br>
+                      <small class="text-muted">Arte Romano</small>
+                    </div>
+                    <img src="img/iconos/coliseo.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-down">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/alcazaba01.jpg" alt="Alcazaba Musulmana de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Alcazaba Árabe</h3>
+                    <p>Fortificación del siglo IX construida por Abderramán II, es la más antigua conservada en la península. Encerraba un recinto cuadrado de 130 m de lado, con muros de granito reutilizado y múltiples torres, y un aljibe subterráneo para almacenar agua.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/f9nNEcn9TjUiPnQ89" target="_blank">Cómo llegar</a></span><br>
+                      <small class="text-muted">Arte Árabe</small>
+                    </div>
+                    <span> <video controls name="media" style="height:50px; width: 120px;"><source src="https://www.audioguia.org/static/es_4587.mp3" type="audio/mpeg" ></video></span>
+
+                    <img src="img/iconos/alcazaba.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-down">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/santa-eulalia01.jpg" alt="Basílica de Santa Eulalia y el Hornito de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Basílica de Santa Eulalia y el Hornito</h3>
+                    <p>La Basílica de Santa Eulalia, primer templo cristiano en Hispania (siglo V), se alza sobre el túmulo martirial, con nave medieval y cripta arqueológica. Frente a ella, el Hornito, capilla barroca del XVII, hecha con mármoles romanos del templo de Marte.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/A6jze8nBCnacJ7rd8" target="_blank">Saber más</a></span><br>
+                      <small class="text-muted">Arte Cristiano</small>
+                    </div>
+                    <img src="img/iconos/capilla.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-left">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/museo-romano01.jpg" alt="Museo Nacional de Arte Romano de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Museo Nacional de Arte Romano (MNAR)</h3>
+                    <p>Diseñado por el prestigioso arquitecto Rafael Moneo e inaugurado en 1986, este museo es un centro esencial de investigación y difusión de la cultura romana. Alberga hallazgos de la antigua Augusta Emerita y organiza congresos, exposiciones y actividades educativas, consolidándose como un referente internacional en arqueología clásica.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/QQZvtFWVibUrSyJZ7" target="_blank">Cómo llegar</a></span><br>
+                      <small class="text-muted">Arte Romano</small>
+                    </div>
+                    <img src="img/iconos/coliseo.png" width="48" height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0">
+                <div class="card-body">
+                  <div class="text-dark py-2 fs-3">
+                    <img class="img-fluid" src="img/coleccion-visigoda01.jpg" alt="Museo de Arte y Cultura Visigoda de Mérida">
+                  </div>
+                  <blockquote class="blockquote py-vh-2">
+                    <h3>Museo de Arte y Cultura Visigoda</h3>
+                    <p>Situado en la iglesia barroca del Convento de Santa Clara (siglo XVII), este museo exhibe esculturas, capiteles, placas de cancel y piezas litúrgico-artísticas visigodas recogidas en Mérida y sus cercanías. Su colección ofrece una mirada profunda a la etapa visigoda (siglos IV‑VIII), cuando Mérida fue capital de la provincia ecclesiástica hispanorromana.</p>
+                    <a href="https://consorciomerida.sacatuentrada.es/" class="btn btn-dark btn-l shadow me-3 rounded-0 " target="_blank">Comprar entrada</a>
+
+                  </blockquote>
+                  <div class="d-flex justify-content-between border-top pt-3">
+                    <div>
+                      <span class="h6 fw-5"><a href="https://maps.app.goo.gl/R7gCKboCG9pLY9xLA" target="_blank">Cómo llegar</a></span><br>
+                      <small class="text-muted">Arte Visigodo</small>
+                    </div>
+                    <img src="img/iconos/fibula-visigoda.png"  height="48"  alt="" data-aos="fade">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div> 
+  </div> 
+  <div class="position-relative overflow-hidden w-100 " id="galeria">
+  <div class="container-fluid py-vh-6">
+    <div class="row d-flex justify-content-center py-vh-3">
+      <div class="col-12 col-lg-10 col-xl-8 text-center">
+        <h2 class="display-6" data-aos="fade-in">Galería Multimedia</h2>
+      </div>
+    </div>
+    <section class="gallery">
+        <ul class="images">
+          <li class="img"><img src="img/acueducto-milagros01.jpg" alt="Acueducto de los Milagros"></li>
+          <li class="img"><img src="img/anfiteatro01.jpg" alt="Anfiteatro"></li>
+          <li class="img"><img src="img/a_festival_teatro_clasico_merida_08.webp" alt="Festival de Teatro clásico"></li>
+          <li class="img"><img src="img/Alcazaba.webp" alt="Alacazaba"></li>
+          <li class="img"><img src="img/National-Museum-Of-Roman-Art.webp" alt="MNAR"></li>
+          <li class="img"><img src="img/teatro.jpg" alt="Teatro Romano"></li>
+          <li class="img"><img src="img/Puente-Romano.webp" alt="Puente romano"></li>
+          <li class="img"><img src="img/templo-de-diana.webp" alt="Templo de Diana"></li>
+          <li class="img"><img src="img/circo01.jpg" alt="Circo"></li>
+          <li class="img"><img src="img/templo.jpg" alt="Templo de Diana"></li>
+          <li class="img"><img src="img/puente_romano.webp" alt="Puente romano"></li>
+          <li class="img"><img src="img/santa-eulalia01.jpg" alt="Basílica Santa Eulalia"></li>
+          <li class="img"><img src="img/templo-de-diana.webp" alt="Templo de Diana"></li>
+          <li class="img"><img src="img/teatro-romano01.jpg" alt="Teatro Romano"></li> 
+          <li class="img"><img src="img/casa-mitreo02.jpg" alt="Casa del Mitreo"></li>
+          <li class="img"><img src="img/arco-trajano01.jpg" alt="Arco de Trajano"></li>
+          <li class="img"><img src="img/coleccion-visigoda01.jpg" alt="Museo Visigodo"></li>
+          <li class="img"><img src="img/alcazabe.jpeg" alt="Alcazaba"></li>
+          <li class="img"><img src="img/casa-mitreo02.jpg" alt="Casa del Mitreo"></li>
+          <li class="img"><img src="img/templo-diana01.jpg" alt="Templo de Diana"></li>
+          <li class="img"><img src="img/alcazaba01.jpg" alt="Alcazaba"></li>
+          <li class="img"><img src="img/diosa-ceres.webp" alt="Diosa Ceres"></li>
+          <li class="img"><img src="img/teatro-romano02.webp" alt="Teatro Romano"></li>
+          <!-- más elementos -->
+        </ul>
+    </section>
+
+    <div class="lightbox">
+        <div class="wrapper">
+          <header>
+            <button class="close">&times;</button>
+          </header>
+          <div class="preview-img"><img src="" alt=""></div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+          <div class="caption"></div>
+        </div>
+    </div>
+      
+    </div>
+   </div>
+ </div>
+
+</div>  
+
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="video">
+  <div class="container">
+   
+      <div class="row d-flex  align-items-center">
+       
+        <div class="col-lg-8">
+          <div class="row gx-5 d-flex">
+            <div class="col-md-11">
+              <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right">
+                <iframe width="100%"  src="https://www.youtube.com/embed/AriaL18Ys8s?si=kQ7L2g9kq2eFznIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <h3 class="py-5 border-top border-dark" data-aos="fade-left">Mérida: Un viaje extraordinario</h3>
+          <p data-aos="fade-left" data-aos-delay="200">Sumérgete en la historia milenaria de Mérida, Patrimonio de la Humanidad, con este vídeo oficial de “Ciudades Patrimonio”. Descubre sus monumentos romanos emblemáticos, la vibrante cultura local y la belleza del paisaje urbano, todo a través de imágenes cautivadoras que presentan un recorrido visual por el legado emergitense.
+        </div>
+      </div>
+
+  </div>
+</div>
+<div class="bg-light w-100 overflow-hidden" id="mapa">
+  <div class="container py-vh-6">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 ">
+        <div class="container " >
+          <h2 class="display-6 mb-4 text-center py-vh-3">Mapa de Mérida</h2>
+            <div class="ratio ratio-16x9 rounded shadow">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24834.618544784702!2d-6.364309702682543!3d38.91649553250438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1426907b023fe7%3A0xfe5ac25ac22cadde!2s06800%20M%C3%A9rida%2C%20Badajoz!5e0!3m2!1ses!2ses!4v1753879766148!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="small py-vh-4 w-100 overflow-hidden" id="info">
+  <div class="container">
+    <div class="row d-flex justify-content-center py-vh-3">
+      <div class="col-12 col-lg-10 col-xl-8 text-center">
+        <h2 class="display-6" data-aos="fade-in">Información de interés</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 border-end" data-aos="fade-up">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
+      <img class="bi bi-card-checklist" src="img/iconos/calendario.png" alt="icono calendario" width="42" height="42">
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Eventos culturales actuales</h3>
+      <p>Disfruta de una agenda cultural completa que combina teatro clásico, recreaciones históricas, cine, música y actividades de barrio. Mérida en 2025 se viste de fiesta con propuestas para todos los públicos, destacando:</p>
+      <ul style="list-style: none;">
+        <li><a href="https://www.festivaldemerida.es/" target="_blank">Festival Internacional de Teatro Clásico</a></li>
+        <li><a href="https://www.emerita-lvdica.es/" target="_blank">Emerita Lvdica (Recreación histórica romana)</a></li>
+        <li><a href="https://stoneandmusicfestival.com/" target="_blank"> Stone & Music Festival</a></li>
+        <li><a href="https://mitjazzfestival.com/" target="_blank">MIT Jazz Festival</a>
+        <li><a href="https://www.semanasantademerida.es/" target="_blank">Semana Santa de Mérida</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4 border-end" data-aos="fade-up" data-aos-delay="200">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <img class="bi bi-card-checklist" src="img/iconos/boleto.png" alt="icono boleto" width="42" height="42">
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Tarifas y horarios</h3>
+
+      <p>La entrada conjunta (válida varios días) permite el acceso a todos los recintos gestionados por el Consorcio (Teatro, Anfiteatro, Alcazaba, Circo, Casa del Mitreo, Cripta Santa Eulalia, Morería, etc.)</p>
+    <ul style="list-style: none;">
+        <li><a href="https://teatroromanomerida.com/" target="_blank">Compra tu entrada entrada conjunto monumental</a></li>
+        <li><a href="https://www.cultura.gob.es/mnromano/informacion/horarios-tarifas.html" target="_blank">Entradas a MNAR y Museo visigodo</a></li>
+        <li><a href="https://turismomerida.org/tarifas-y-horarios/" target="_blank">Tarifas y horarios oficiales - Turismo Mérida</a></li>
+        <li><a href="https://www.consorciomerida.org/conjunto/visita/entradas" target="_blank">Tipos de entradas y precios - Consorcio Ciudad Monumental</a></li>
+        <li><a href="https://www.consorciomerida.org/node/1036" target="_blank">Horario de verano - monumentos de Mérida</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <img class="bi bi-card-checklist" src="img/iconos/mapa-de-la-ciudad.png" alt="icono mapa" width="42" height="42">
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Guias y planos</h3>
+      <p>Descarga guías oficiales, planos turísticos y mapas interactivos que te ayudarán a planificar tu visita por Mérida. Incluyen itinerarios por monumentos, recorridos temáticos, rutas accesibles, apps móviles y contenidos didácticos en español e inglés.</p>
+       <ul style="list-style: none;">
+        <li><a href="https://turismomerida.org/descargas/2024-plano-turistico-merida.pdf" target="_blank">Plano Turístico de Mérida</a></li>
+        <li><a href="https://tripomatic.com/es/map/merida-mapa-turistico-para-imprimir-city%3A6734">Plano Turístico de Mérida para imprimir</a></li>
+        <li><a href="https://turismomerida.org/descargas/2025-arte-urbano-merida.pdf" target="_blank">Mapa de Arte urbano</a></li>
+        <li><a href="https://turismomerida.org/descargas/2023-guia-accesibilidad-entornos-monumentales.pdf" target="_blank">Guía de acesibilidad a entornos monumentales</a></li>
+        <li><a href="https://turismomerida.org/descargas/guia-didactica-merida.pdf" target="_blank">Guía didactica de Mérida</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+<div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="workwithus" style="background-image: url('img/xteatro-romano-festival-teatro-portada.jpg.pagespeed.ic.dKuKG1lUPA.jpeg');background-size: cover;background-position: center; "">
+  <div class="container">
+    <div class="row d-flex justify-content-center" >
+      <div class="row d-flex justify-content-center text-center" >
+  <div class="col-lg-8 text-center" data-aos="fade" >
+    <h2 class="display-1 mb-5 fw-bold shadow">Festival Internacional de Teatro Clásico de Mérida</h2>
+  </div>
+  <div class="col-12">
+    <a href="https://www.festivaldemerida.es/entradas/" target="_blank" class="btn btn-dark btn-xl shadow me-3 mt-4 w-bold" data-aos="fade-down">Consigue tus entradas</a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="container py-vh-3 border-top" data-aos="fade" data-aos-delay="200">
+  <div class="row d-flex justify-content-center">
+    <div class="col-12 col-lg-8 text-center">
+      <h3 class="fs-2 fw-light mb-4">
+        <span class="fw-bold">Newsletter</span> ¡Manténgase al día con nuestro<span class="fw-bold">boletín informativo mensual y gratuito!</span><br>
+    </h3></div>
+    <div class="col-12 col-lg-8 text-center">
+      <div class="row">
+        <div class="grouped-inputs border bg-light p-2">
+  <div class="row">
+    <div class="col">
+      <form class="form-floating">
+        <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput"> Dirección de Email</label>
+      </form>
+    </div>
+    <div class="col-auto">
+      <a href="register.html" class="btn btn-dark py-3 px-5 fw-bold">Subscríbete</a>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <footer>
+  <div class="container small border-top">
+    <div class="row py-5 d-flex justify-content-between">
+
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <a class="navbar-brand pe-4 fs-4 " href="index.html" >
+          <img src="img/logo-descubremerida-light.png"  height="32" class="d-inline-block align-text-top me-2" alt="Stride Logo" style="margin-bottom: 20px;">
+        </a>
+        <br>
+  <address class="text-secondary mt-3">
+    Damos vida al legado milenario de Mérida con una experiencia digital clara, atractiva y accesible. Queremos que descubras su historia romana, visigoda y musulmana, disfrutes eventos culturales y explores su patrimonio de manera sostenible e inclusiva.
+  </address>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Links de Interés</h3>
+  <ul class="nav flex-column">
+  
+         <li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://www.festivaldemerida.es/" target="_blank">Festival Internacional de Teatro Clásico</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://www.emerita-lvdica.es/" target="_blank">Emerita Lvdica (Recreación histórica romana)</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://stoneandmusicfestival.com/" target="_blank"> Stone &amp; Music Festival</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://mitjazzfestival.com/" target="_blank">MIT Jazz Festival</a>
+        </li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://www.semanasantademerida.es/" target="_blank">Semana Santa de Mérida</a></li>
+  </ul>
+
+
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Ayuda</h3>
+  <ul class="nav flex-column">
+     <li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://turismomerida.org/descargas/2024-plano-turistico-merida.pdf" target="_blank">Plano Turístico de Mérida</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://tripomatic.com/es/map/merida-mapa-turistico-para-imprimir-city%3A6734">Plano Turístico de Mérida para imprimir</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://turismomerida.org/descargas/2025-arte-urbano-merida.pdf" target="_blank">Mapa de Arte urbano</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://turismomerida.org/descargas/2023-guia-accesibilidad-entornos-monumentales.pdf" target="_blank">Guía de acesibilidad a entornos monumentales</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary ps-0" href="https://turismomerida.org/descargas/guia-didactica-merida.pdf" target="_blank">Guía didactica de Mérida</a></li>
+  </ul>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 p-5">
+  <h3 class="h6 mb-3">Contacto</h3>
+  <p>Email: <a href="mailto:#"> info@descubremerida.es</a></p>
+    <p>Teléfono: +34 123 456 789</p>
+</div>
+</div>
+</div>
+
+<div class="container text-center py-3 small">Diseñada y desarrollada por <a href="https://murieldesign.com" class="link-fancy" target="_blank">Murieldesign</a>
+</div>
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>
+ <script src="js/timeline.js"></script>
+
+  </body>
+</html>
